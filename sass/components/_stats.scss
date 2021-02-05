@@ -1,0 +1,23 @@
+.stats {
+  background-color: $color-bg;
+  display: flex;
+  justify-content: center;
+}
+
+.stats__bg-dark {
+  padding: 66px 0;
+  width: 50%;
+  background-color: #6888ff;
+}
+
+.stats__bg-light {
+  padding: 66px 0;
+  width: 50%;
+  background-color: #e9efff;
+}
+
+.stats__icon {
+  height: 68px;
+  width: auto;
+  margin-bottom: 24px;
+}

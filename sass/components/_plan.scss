@@ -1,0 +1,17 @@
+.plan {
+  background-color: $color-bg;
+  padding: 170px 0;
+}
+
+.plan__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plan__img {
+  height: 400px;
+  width: auto;
+
+  border: 1px dashed greenyellow;
+}

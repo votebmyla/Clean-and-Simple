@@ -1,0 +1,29 @@
+.about {
+  width: 761px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 92px;
+}
+
+.about__item {
+  width: 140px;
+  border: 1px dashed gray;
+  text-align: center;
+}
+
+.about__icon {
+  margin-bottom: 33px;
+}
+
+.about__title {
+  color: #4074f8;
+  font-family: $font-secondary;
+  @include font(1.4rem, 2.4rem, 700);
+  margin-bottom: 25px;
+}
+
+.about__text {
+  color: #adb3cb;
+  font-family: $font-secondary;
+  @include font(1.1rem, 1.9rem, 500);
+}

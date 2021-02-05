@@ -1,0 +1,41 @@
+.button {
+  display: inline-block;
+  padding: 13px 16px;
+  border: 2px solid;
+  border-radius: 2px;
+  cursor: pointer;
+  font-family: $font-primary;
+  @include font(1.3rem, 1.6rem, 700);
+  @extend %transition;
+  &_primary {
+    color: $color-button-title;
+    background-color: $color-button-light;
+    border-color: $color-button-light;
+    &:hover {
+      background-color: cornflowerblue;
+    }
+  }
+  &_secondary {
+    color: #fff;
+    background-color: $color-button-secondary;
+    border-color: $color-button-secondary;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 13px 25px;
+  }
+  &_transparent {
+    color: $color-text;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-color: #d1d1e4;
+  }
+  &_alternative {
+    color: $color-alternative;
+    background-color: $color-button-alternative;
+    border-color: $color-button-alternative;
+
+    &:hover {
+      background-color: crimson;
+    }
+  }
+}

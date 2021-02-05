@@ -1,0 +1,39 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: $font-primary;
+}
+
+header,
+section,
+footer {
+  border-bottom: 1px solid $color-block-border;
+  background-color: $color-bright;
+}
+
+b {
+  font-weight: 600;
+}
+
+h1 {
+  @include font(4.8rem, 6rem);
+}
+
+h2 {
+  @include font(3.6rem, 4.5rem);
+}
+
+h3 {
+  @include font(2.4rem, 3rem);
+}
+
+h6 {
+  @include font(1.8rem, 2.2rem);
+}

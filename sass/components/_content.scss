@@ -1,0 +1,103 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  &_productivity {
+    align-items: center;
+  }
+  &_plan {
+    align-items: flex-start;
+    max-width: 413px;
+    border: 1px dashed greenyellow;
+  }
+  &_features {
+    align-items: center;
+  }
+  &_stats-first {
+    align-items: flex-end;
+    padding-right: 90px;
+  }
+  &_stats-second {
+    padding-left: 90px;
+  }
+  &_blog {
+    align-items: center;
+  }
+}
+
+.content__subtitle {
+  font-family: $font-secondary;
+  @include font(1rem, 1.2rem, 500);
+  text-transform: uppercase;
+  color: $color-heading;
+  &_productivity {
+    margin-bottom: 16px;
+  }
+  &_plan {
+    //надо блоки выравнить по центру
+    margin-bottom: 27px;
+  }
+  &_features {
+    margin-bottom: 20px;
+  }
+  &_blog {
+    margin-bottom: 20px;
+  }
+}
+
+.content__title {
+  font-family: $font-primary;
+  color: $color-heading;
+  &_productivity {
+    margin-bottom: 28px;
+  }
+  &_plan {
+    margin-bottom: 27px;
+  }
+  &_features {
+    padding-bottom: 90px;
+  }
+  &_stats-first {
+    color: #fff;
+    margin-bottom: 16px;
+    letter-spacing: 3px;
+  }
+  &_stats-second {
+    color: #6888ff;
+    margin-bottom: 16px;
+    letter-spacing: 3px;
+  }
+  &_blog {
+    margin-bottom: 92px;
+  }
+}
+
+.content__text {
+  font-family: $font-secondary;
+  @include font(1.5rem, 2.8rem);
+  color: $color-text;
+  &_productivity {
+    max-width: 500px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &_plan {
+    letter-spacing: 0.03rem;
+    margin-bottom: 47px;
+  }
+  &_stats-first {
+    color: #fff;
+  }
+  &_stats-second {
+    color: #6888ff;
+  }
+}
+
+.content__button {
+  border: 0px solid black;
+  border-radius: 50%;
+  // подумать над тенью
+
+  &_plan {
+    display: flex;
+  }
+}

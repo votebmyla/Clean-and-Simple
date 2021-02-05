@@ -1,0 +1,35 @@
+.features {
+  padding: 170px 0;
+}
+
+.features__button {
+  display: flex;
+  align-items: center;
+}
+
+.or {
+  font-family: $font-secondary;
+  @include font(1.1rem, 1.9rem, 600);
+  color: #adb3cb;
+  text-transform: uppercase;
+  padding: 0 48px;
+  position: relative;
+  &::before {
+    content: "";
+    width: 15px;
+    height: 2px;
+    background-color: #adb3cb;
+    position: absolute;
+    top: 47%;
+    left: 20px;
+  }
+  &::after {
+    content: "";
+    width: 15px;
+    height: 2px;
+    background-color: #adb3cb;
+    position: absolute;
+    top: 47%;
+    right: 20px;
+  }
+}

@@ -1,0 +1,13 @@
+.logo {
+  font-family: $font-primary;
+  font-size: 3.6rem;
+  font-weight: 900;
+  color: $color-alternative;
+  text-decoration: none;
+  padding-right: 50px;
+  transition: $transition-primary;
+
+  &:hover {
+    color: #a13535;
+  }
+}

@@ -1,0 +1,18 @@
+.customers {
+  background-color: $color-bright;
+  padding: 60px 0;
+}
+
+.customers__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.customers__link {
+  text-decoration: none;
+  @extend %transition;
+  &:hover {
+    background-color: darkcyan; //pointer не работает
+  }
+}

@@ -13,19 +13,20 @@
     rel="stylesheet">
 
 
-  <link rel="stylesheet" href="./assests/css/normalize.min.css">
+
+  <link rel="stylesheet" href="./assests/css/reset.min.css">
   <link rel="stylesheet" href="./assests/css/style.css">
 </head>
 
 <body>
-  <!-- Header -->
+
   <header class="header">
 
-    <div class="wrapper">
-      <div class="header__inner">
+    <div class="wrapper header__wrapper">
+      <div class="inner-block">
         <a class="logo" href="#">GoLo</a>
-        <nav class="navigation">
-          <ul class="navigation__list">
+        <nav class="header__navigation">
+          <ul class="navigation">
             <li class="navigation__item">
               <a href="#" class="navigation__link">Home</a>
             </li>
@@ -43,163 +44,227 @@
             </li>
           </ul>
         </nav>
-        <div class="social">
-          <ul class="social__list">
-            <li class="social__items">
-              <a class="social__link" href="#">fb</a>
-            </li>
-            <li class="social__items">
-              <a class="social__link" href="#">tg</a>
-            </li>
-            <li class="social__items">
-              <a class="social__link" href="#">tw</a>
-            </li>
-            <li class="social__items">
-              <a class="social__link" href="#">md</a>
-            </li>
-          </ul>
-        </div>
-        <div class="header__button">
-          <button class="button">Get started</button>
-        </div>
       </div>
-      <!--/header inner-->
-    </div><!-- /wrapper -->
-
-  </header>
-  <!--Productivity-->
-  <section class="productivity">
-
-    <div class="wrapper">
-      <div class="content">
-        <div class="content__subtitle">PLAN YOUR LIFE</div>
-        <h1 class="content__title">Increase your productivity</h1>
-        <p class="content__text">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an,
-          insolens
-          gubergren similique est cu. Et vel modus congue vituperata.</p>
-        <div class="content__button">play</div>
+      <div class="inner-block">
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <object data="./assests/images/social/facebook.svg" type="text/svg+xml">
+                <img src="/assests/images/social/facebook.svg" alt="facebook">
+              </object>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <object data="./assests/images/social/twitter.svg" type="text/svg+xml">
+                <img src="/assests/images/social/twitter.svg" alt="twitter">
+              </object></a>
+          </li>
+          <li class="social__item">
+            <div class="header__social"></div>
+            <a class="social__link" href="#">
+              <object data="./assests/images/social/telegram.svg" type="text/svg+xml">
+                <img src="/assests/images/social/telegram.svg" alt="telegram">
+              </object></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <object data="./assests/images/social/medium.svg" type="text/svg+xml">
+                <img src="/assests/images/social/medium.svg" alt="medium">
+              </object></a>
+          </li>
+        </ul>
+        <div class="block-button">
+          <div class="button button_primary">Get started</div>
+        </div>
       </div>
     </div>
-    <!--/wrapper-->
+  </header>
+
+  <section class="productivity">
+    <div class="productivity__bg">
+      <div class="wrapper">
+        <div class="content content_productivity">
+          <div class="content__subtitle content__subtitle_productivity">PLAN YOUR LIFE</div>
+          <h1 class="content__title content__title_productivity">
+            Increase your <b>productivity</b>
+          </h1>
+          <p class="content__text content__text_productivity">Brute laoreet efficiendi id his, ea
+            illum
+            nonumes luptatum pro.
+            Usu atqui laudem an,
+            insolens
+            gubergren similique est cu. Et vel modus congue vituperata.</p>
+          <div>
+            <object class="content__button" data="./assests/images/productivity/play-button.svg" type="text/svg+xml">
+            </object>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section class="customers">
     <div class="wrapper">
-
       <ul class="customers__list">
         <li class="customers__item">
           <a href="#" class="customers__link">
-            brands
+            <object data="./assests/images/customers/apple-watch.svg" type="text/svg+xml">
+              <img src="./assests/images/customers/apple-watch.svg" alt="apple-watch">
+            </object>
           </a>
           <a href="#" class="customers__link">
-            brands
+            <object data="./assests/images/customers/facebook.svg" type="text/svg+xml">
+              <img src="./assests/images/customers/facebook.svg" alt="facebook">
+            </object>
           </a>
           <a href="#" class="customers__link">
-            brands
+            <object data="./assests/images/customers/bitbucket.svg" type="text/svg+xml">
+              <img src="./assests/images/customers/bitbucket.svg" alt="bitbucket">
+            </object>
           </a>
           <a href="#" class="customers__link">
-            brands
+            <object data="./assests/images/customers/atlassian.svg" type="text/svg+xml">
+              <img src="./assests/images/customers/atlassian.svg" alt="atlassian">
+            </object>
           </a>
           <a href="#" class="customers__link">
-            brands
+            <object data="./assests/images/customers/audi.svg" type="text/svg+xml">
+              <img src="./assests/images/customers/audi.svg" alt="audi">
+            </object>
           </a>
         </li>
       </ul>
-
     </div>
   </section>
 
   <section class="plan">
-
-    <div class="wrapper">
-      <div class="content">
-        <div class="content__subtitle">
+    <div class="wrapper plan__wrapper">
+      <div class="content content_plan layout-2-column">
+        <div class="content__subtitle content__subtitle_plan">
           DESKTOP AND MOBILE APP
         </div>
-        <h2 class="content__title">Plan and manage</h2>
-        <div class="content__button">
-          <button class="button">View video</button>
-          <button class="button">See features</button>
+        <h2 class="content__title content__title_plan">
+          <b>Plan</b> and <b>manage</b>
+        </h2>
+        <div class="content__text content__text_plan">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro.
+          Usu atqui laudem an,
+          insolens gubergren similique est cu. Et vel modus congue vituperata. Solum patrioque no sea. Mea ex malis
+          mollis oporteat. Eum an expetenda consequat.</div>
+        <div class="content__button content__button_plan">
+          <div class="button button_secondary">View video</div>
+          <div class="button button_transparent">See features</div>
         </div>
       </div>
+      <img class=" plan__img" src="./assests/images/plan/plan-illustration.png" alt="">
     </div>
-
   </section>
 
   <section class="features">
-
     <div class="wrapper">
-      <div class="content">
-        <div class="content__subtitle">
+      <div class="content content_features">
+        <div class="content__subtitle content__subtitle_features">
           ABOUT US
         </div>
-        <div class="content__title">
-          Read about our app
-        </div>
-        <div class="layout-4-column">
-          <div class="about">
-            <div class="about__icon">icon</div>
+        <h3 class="content__title content__title_features">
+          <b>Read about our app</b>
+        </h3>
+        <div class="about layout-4-column">
+          <div class="about__item">
+            <div class="about__icon">
+              <object data="./assests/images/features/overview.svg" type="text/svg+xml">
+                <img src="./assests/images/features/overview.png" alt="overview">
+              </object>
+            </div>
             <div class="about__title">Overview</div>
             <div class="about__text">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro.</div>
           </div>
-          <div class="about">
-            <div class="about__icon">icon</div>
+          <div class="about__item">
+            <div class="about__icon"><object data="./assests/images/features/files.svg" type="text/svg+xml">
+                <img src="./assests/images/features/files.png" alt="files">
+              </object>
+            </div>
             <div class="about__title">Files</div>
             <div class="about__text">No vim nulla vitae intellegat. Ei enim error ius, solet atomorum conceptam ex has.
             </div>
           </div>
-          <div class="about">
-            <div class="about__icon">icon</div>
+          <div class="about__item">
+            <div class="about__icon">
+              <object data="./assests/images/features/meeting.svg" type="text/svg+xml">
+                <img src="./assests/images/features/meeting.svg" alt="meeting">
+              </object>
+            </div>
             <div class="about__title">Meeting chats</div>
             <div class="about__text">Vim ne tacimates neglegentur. Erat diceret omittam at est.</div>
           </div>
-          <div class="about">
-            <div class="about__icon">icon</div>
+          <div class="about__item">
+            <div class="about__icon">
+              <object data="./assests/images/features/save-events.svg" type="text/svg+xml">
+                <img src="./assests/images/features/save-events.png" alt="save-events">
+              </object>
+            </div>
             <div class="about__title">Save events</div>
             <div class="about__text">Nisl idque mel ea, nominati voluptatum.
             </div>
           </div>
-          <div class="features-buttons">
-            <button class="button">Read more</button>
-            <div class="or">or</div>
-            <button class="button">Get started</button>
-          </div>
+        </div>
+        <div class="features__button">
+          <div class="button button_alternative">Read more</div>
+          <div class="or">or</div>
+          <div class="button button_primary">Get started</div>
         </div>
       </div>
-
     </div>
 
   </section>
-  <section class="stats">
 
-    <div class="wrapper">
-      <div class="layout-2-column">
-        <div class="stats__item stats__item-colored">
-          <div class="stats__icon">icon</div>
-          <div class="stats__number">89%</div>
-          <div class="stats__text">Customers who have increased their productivity</div>
-        </div>
-        <div class="stats__item">
-          <div class="stats__icon">icon</div>
-          <div class="stats__number">3123</div>
-          <div class="stats__text">Users who have used our application</div>
+  <section class="stats">
+    <div class="stats__bg-dark">
+      <div class="wrapper">
+        <div class="content content_stats-first">
+          <div class="stats__icon">
+            <object data="./assests/images/stats/stats-1.svg" type="text/svg+xml">
+              <img src="./assests/images/stats/stats-1.svg" alt="stats-1" srcset="">
+            </object>
+          </div>
+          <h1 class="content__title content__title_stats-first">89%</h1>
+          <div class="content__text content__text_stats-first">Customers who have increased their productivity</div>
         </div>
       </div>
     </div>
-
+    </div>
+    <div class="stats__bg-light">
+      <div class="wrapper">
+        <div class="content content_stats-second">
+          <div class="stats__icon">
+            <object data="./assests/images/stats/stats-2.svg" type="text/svg+xml">
+              <img src="./assests/images/stats/stats-2.svg" alt="stats-2" srcset="">
+            </object>
+          </div>
+          <h1 class="content__title content__title_stats-second">3123</h1>
+          <div class="content__text content__text_stats-second">Users who have used our application</div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
   </section>
 
   <section class="blog">
-
     <div class="wrapper">
-      <div class="content">
-        <div class="content__subtitle">OUR RESOURCES</div>
-        <div class="content__title">Start reading our blog</div>
+      <div class="content content_blog">
+        <div class="content__subtitle content__subtitle_blog">OUR RESOURCES</div>
+        <h3 class="content__title content__title_blog">
+          <b>Start reading our blog</b>
+        </h3>
       </div>
       <div class="slider">
         <div class="slider__slide">
           <div class="layout-2-column">
-            <div class="slider__image">images</div>
+            <div class="slider__image">
+              <img src="https://via.placeholder.com/407x267" alt="">
+            </div>
             <div class="slider__content">
               <h2 class="slider__title">How to start planning</h2>
               <p class="slider__text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit
@@ -213,20 +278,19 @@
         </div>
       </div>
     </div>
-
   </section>
 
   <section class="quotes">
-
     <div class="wrapper">
       <div class="layout-2-column">
         <div class="layout-item">
           <div class="content">
-            <div class="content__subtitle">TESTIMONIALS</div>
-            <div class="content__title">Customers's quotes</div>
-            <div class="content__text">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem
+            <div class="content__subtitle content__subtitle_quotes">TESTIMONIALS</div>
+            <h2 class="content__title content__title_quotes"><b>Customers's quotes</b></h2>
+            <p class="content__text content__text_quotes">Brute laoreet efficiendi id his, ea illum nonumes luptatum
+              pro. Usu atqui laudem
               an.
-            </div>
+            </p>
           </div>
         </div>
         <div class="layout-item">
@@ -244,131 +308,149 @@
         </div>
       </div>
     </div>
-
   </section>
-  <section class="faq">
 
-    <div class="content">
-      <div class="content__subtitle">
-        Customer help
-      </div>
-      <div class="content__title">
-        Frequently asked questions
-      </div>
-      <div class="questions">
+  <section class="faq">
+    <div class="wrapper">
+      <div class="content">
+        <div class="content__subtitle content__subtitle_faq">
+          Customer help
+        </div>
+        <h3 class="content__title content__title_faq">
+          <b>Frequently asked questions</b>
+        </h3>
+        <div class="questions">
+          <div class="questions__item">
+            <div class="questions__arrow">arrow</div>
+            <div class="questions__title">Reque insolens in vel?</div>
+          </div>
+          <div class="questions__item">
+            <div class="questions__arrow">arrow</div>
+            <div class="questions__title">Vis rebum error graecis ea, id sit postea accusamus?</div>
+          </div>
+        </div>
         <div class="questions__item">
           <div class="questions__arrow">arrow</div>
-          <div class="questions__title">Reque insolens in vel?</div>
+          <div class="questions__title">Lorem repudiandae ne nec?</div>
+          <div class="questions__answer">
+            <div class="questions__text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit
+              tractatos, vero tractatos ius an, in mel diceret persecuti.
+            </div>
+            <div class="questions__link">Go to documentation</div>
+          </div>
+        </div>
+        <div class="questions__item">
+          <div class="questions__arrow">arrow</div>
+          <div class="questions__title">Vis rebum error graecis ea, id sit postea accusamus?</div>
         </div>
         <div class="questions__item">
           <div class="questions__arrow">arrow</div>
           <div class="questions__title">Vis rebum error graecis ea, id sit postea accusamus?</div>
         </div>
       </div>
-      <div class="questions__item">
-        <div class="questions__arrow">arrow</div>
-        <div class="questions__title">Lorem repudiandae ne nec?</div>
-        <div class="questions__answer">
-          <div class="questions__text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit
-            tractatos, vero tractatos ius an, in mel diceret persecuti.
-          </div>
-          <div class="questions__link">Go to documentation</div>
-        </div>
-      </div>
-      <div class="questions__item">
-        <div class="questions__arrow">arrow</div>
-        <div class="questions__title">Vis rebum error graecis ea, id sit postea accusamus?</div>
-      </div>
-      <div class="questions__item">
-        <div class="questions__arrow">arrow</div>
-        <div class="questions__title">Vis rebum error graecis ea, id sit postea accusamus?</div>
-      </div>
     </div>
     </div>
-
   </section>
 
   <section class="get-started">
-
     <div class="wrapper">
       <div class="content">
-        <div class="content__subtitle">PLAN YOUR LIFE</div>
-        <div class="content__title">Get started now</div>
-        <p class="content__text">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an,
+        <div class="content__subtitle content__subtitle_get-started">PLAN YOUR LIFE</div>
+        <h1 class="content__title content__title_get-started">
+          Get <b>started</b> now
+        </h1>
+        <p class="content__text content__text_get-started">Brute laoreet efficiendi id his, ea illum nonumes luptatum
+          pro. Usu atqui laudem an,
           insolens gubergren similique est cu. Et vel modus congue vituperata.</p>
       </div>
-      <div class="content__button">
+      <div class="content__button content__button_get-started">
         <div class="button">View pricing</div>
         <div class="button">Read documentation</div>
       </div>
     </div>
-
   </section>
 
   <section class="newsletter">
-
     <div class="wrapper">
       <div class="newsletter__inner">
         <div class="newsletter__desc">
-          <div class="newsletter__title">Sign up for newsletter</div>
+          <h6 class="newsletter__title">
+            <b>Sign up for newsletter</b>
+          </h6>
           <div class="newsletter__text">Cu qui soleat partiendo urbanitas. Eum aperiri indoctum eu, homero alterum.
           </div>
         </div>
         <form class="form" action="">
           <input class="form__input" type="email" placeholder="Email address" value="">
-          <button class="button">Save me</button>
+          <button class="button" type="submit">Save me</button>
         </form>
       </div>
     </div>
-
   </section>
 
-  <footer>
-    <div class="footer__inner">
-      <a class="logo" href="#">GoLo</a>
-      <nav class="navigation">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">Home</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">Blog</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">Features</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">Pricing</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">Documentation</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="social">
-        <ul class="social__list">
-          <li class="social__items">
-            <a class="social__link" href="#">fb</a>
-          </li>
-          <li class="social__items">
-            <a class="social__link" href="#">tg</a>
-          </li>
-          <li class="social__items">
-            <a class="social__link" href="#">tw</a>
-          </li>
-          <li class="social__items">
-            <a class="social__link" href="#">md</a>
-          </li>
-        </ul>
+  <footer class="footer">
+    <div class="wrapper footer__wrapper">
+      <div class="footer__inner">
+        <div class="inner-block">
+          <a class="logo" href="#">GoLo</a>
+          <nav class="header__navigation">
+            <ul class="navigation">
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Home</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Blog</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Features</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Pricing</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Documentation</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="inner-block">
+          <ul class="social">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <object data="./assests/images/social/facebook.svg" type="text/svg+xml">
+                  social icon
+                </object>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <object data="./assests/images/social/twitter.svg" type="text/svg+xml">
+                  social icon
+                </object></a>
+            </li>
+            <li class="social__item">
+              <div class="header__social"></div>
+              <a class="social__link" href="#">
+                <object data="./assests/images/social/telegram.svg" type="text/svg+xml">
+                  social icon
+                </object></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <object data="./assests/images/social/medium.svg" type="text/svg+xml">
+                  social icon
+                </object></a>
+            </li>
+          </ul>
+          <div class="block-button">
+            <div class="button button_primary">Get started</div>
+          </div>
+        </div>
       </div>
-      <div class="header__button">
-        <button class="button">Get started</button>
+      <div class="footer__inner">
+        <div class="copyright">Copyright © 2018 by Random site</div>
       </div>
     </div>
-
-    <div class="copyright">Copyright © 2018 by Random site
-    </div>
-
   </footer>
 
 </body>

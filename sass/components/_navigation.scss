@@ -1,0 +1,20 @@
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation__item {
+  padding: 0 21px;
+}
+
+.navigation__link {
+  font-family: $font-primary;
+  @include font(1.2rem, 1.5rem, 600);
+  color: $color-nav-text;
+  text-decoration: none;
+  @extend %transition;
+  &:hover {
+    color: $color-nav-text-hover;
+    font-weight: 600; // растояние меняется
+  }
+}

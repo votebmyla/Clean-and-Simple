@@ -1,0 +1,14 @@
+.productivity {
+  background-color: $color-bg;
+  padding: 90px 0 0;
+  &__bg {
+    background-image: url(/assests/images/productivity/hero-image.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 572px;
+    //width: 100%;
+    background-color: rgb(10, 12, 150); //надо поработать
+    margin: 0 auto;
+  }
+}
