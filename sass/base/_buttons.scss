@@ -24,7 +24,7 @@
     padding: 13px 25px;
   }
   &_transparent {
-    color: $color-text;
+    color: #d1d1e4;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     border-color: #d1d1e4;
@@ -37,5 +37,26 @@
     &:hover {
       background-color: crimson;
     }
+  }
+  &_link {
+    border: 1px solid transparent;
+    color: $color-light;
+    margin-left: 8px;
+  }
+  &_light {
+    color: #6888ff;
+    border-color: #fff;
+    background-color: #fff;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  &_newsletter {
+    padding: 21px 62px;
+    border-radius: 5px;
+    border-color: #4d6ce1;
+    background-color: #4d6ce1;
+    color: #fff;
+    margin-left: 14px;
+    outline: none;
   }
 }

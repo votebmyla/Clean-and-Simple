@@ -7,7 +7,6 @@
   &_plan {
     align-items: flex-start;
     max-width: 413px;
-    border: 1px dashed greenyellow;
   }
   &_features {
     align-items: center;
@@ -21,6 +20,22 @@
   }
   &_blog {
     align-items: center;
+  }
+  &_slider {
+    align-items: flex-start;
+  }
+  &_quotes {
+    align-items: flex-start;
+  }
+  &_faq {
+    align-items: center;
+  }
+  &_get-started {
+    align-items: center;
+  }
+  &_newsletter {
+    align-items: flex-start;
+    width: 330px;
   }
 }
 
@@ -41,6 +56,16 @@
   }
   &_blog {
     margin-bottom: 20px;
+  }
+  &_quotes {
+    margin-bottom: 31px;
+  }
+  &_faq {
+    margin-bottom: 20px;
+  }
+  &_get-started {
+    margin-bottom: 16px;
+    color: #fff;
   }
 }
 
@@ -69,6 +94,23 @@
   &_blog {
     margin-bottom: 92px;
   }
+  &_slider {
+    margin-bottom: 32px;
+  }
+  &_quotes {
+    margin-bottom: 14px;
+  }
+  &_faq {
+    margin-bottom: 68px;
+  }
+  &_get-started {
+    font-weight: 300;
+    margin-bottom: 28px;
+    color: #fff;
+  }
+  &_newsletter {
+    margin-bottom: 18px;
+  }
 }
 
 .content__text {
@@ -89,6 +131,19 @@
   }
   &_stats-second {
     color: #6888ff;
+  }
+  &_slider {
+    margin-bottom: 34px;
+  }
+  &_quotes {
+    max-width: 323px;
+  }
+  &_get-started {
+    color: #fff;
+    margin-bottom: 51px;
+  }
+  &_newsletter {
+    @include font(1.4rem, 2.6rem);
   }
 }
 

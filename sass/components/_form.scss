@@ -1,0 +1,15 @@
+.form_newsletter {
+  display: flex;
+}
+
+.form__input_newsletter {
+  background-color: #efeff7;
+  width: 260px;
+  outline: none;
+  border: 2px solid #efeff7;
+  border-radius: 5px;
+  padding: 21px 23px;
+  color: #7a85ad;
+  font-family: $font-primary;
+  @include font(1.3rem, 1.6rem, 700);
+}

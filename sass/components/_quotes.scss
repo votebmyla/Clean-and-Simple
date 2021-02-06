@@ -1,3 +1,19 @@
 .quotes {
   background-color: $color-bg;
+  padding: 110px 0;
+}
+
+.quotes__wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 888px;
+  margin: 0 auto;
+}
+
+.quotes__item {
+  width: 423px;
+
+  &_left {
+    padding-top: 35px;
+  }
 }
