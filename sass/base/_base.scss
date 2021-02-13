@@ -11,6 +11,11 @@ body {
   font-family: $font-primary;
 }
 
+* {
+  box-sizing: border-box;
+  @extend %transition;
+}
+
 header,
 section,
 footer {

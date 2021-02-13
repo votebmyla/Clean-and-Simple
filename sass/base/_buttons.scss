@@ -5,6 +5,7 @@
   border-radius: 2px;
   cursor: pointer;
   font-family: $font-primary;
+  white-space: nowrap;
   @include font(1.3rem, 1.6rem, 700);
   @extend %transition;
   &_primary {
@@ -12,7 +13,9 @@
     background-color: $color-button-light;
     border-color: $color-button-light;
     &:hover {
-      background-color: cornflowerblue;
+      background-color: $color-button-title;
+      border-color: $color-button-title;
+      color: $color-button-light;
     }
   }
   &_secondary {
@@ -22,26 +25,37 @@
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     padding: 13px 25px;
+    &:hover {
+      color: $color-button-secondary;
+      background-color: #fff;
+    }
   }
   &_transparent {
     color: #d1d1e4;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     border-color: #d1d1e4;
+    &:hover {
+      color: $color-nav-text;
+    }
   }
   &_alternative {
     color: $color-alternative;
     background-color: $color-button-alternative;
     border-color: $color-button-alternative;
-
     &:hover {
-      background-color: crimson;
+      background-color: $color-alternative;
+      border-color: $color-alternative;
+      color: $color-button-alternative;
     }
   }
   &_link {
     border: 1px solid transparent;
     color: $color-light;
     margin-left: 8px;
+    &:hover {
+      color: $color-nav-text;
+    }
   }
   &_light {
     color: #6888ff;
@@ -49,6 +63,10 @@
     background-color: #fff;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
+    &:hover {
+      color: #fff;
+      background-color: #6888ff;
+    }
   }
   &_newsletter {
     padding: 21px 62px;

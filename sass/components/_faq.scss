@@ -44,11 +44,18 @@
 .questions__link {
   font-family: $font-primary;
   @include font(1.3rem, 1.6rem, 500);
-
+  white-space: nowrap;
   color: #7382a3;
   border: 1px solid #e8ecf4;
   border-radius: 2px;
   background: #e8ecf4;
   padding: 13px 33px;
   margin-right: 30px;
+
+  &:hover {
+    color: #e8ecf4;
+    border-color: #7382a3;
+    background-color: #7382a3;
+    cursor: pointer;
+  }
 }

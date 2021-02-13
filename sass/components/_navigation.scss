@@ -18,3 +18,9 @@
     font-weight: 600; // растояние меняется
   }
 }
+
+.header__navigation {
+  @include media-tablet {
+    display: none;
+  }
+}

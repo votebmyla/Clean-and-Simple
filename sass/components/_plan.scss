@@ -7,9 +7,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.plan__item {
+  flex-basis: 45%;
 }
 
 .plan__img {
-  height: 400px;
-  width: auto;
+  width: 653px;
 }
